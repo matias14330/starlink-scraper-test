@@ -1,0 +1,14 @@
+# Ignora dependencias
+node_modules/
+
+# Ignora variables de entorno
+.env
+.env.local
+
+# Ignora archivos temporales
+*.log
+.DS_Store
+
+# Ignora configuraciones de sistema
+.vscode/
+.idea/
