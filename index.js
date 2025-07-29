@@ -24,6 +24,7 @@ app.use((req, res, next) => {
 
 // Página principal
 app.get('/', (req, res) => {
+  console.log("Datos cargados:", starlinkData);
   res.render('dashboard', { starlinkData });
 });
 
