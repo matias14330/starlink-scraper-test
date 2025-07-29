@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Panel Starlink</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <h1>Panel de Cuentas Starlink</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Plan</th>
+        <th>Estado</th>
+        <th>Renovación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% starlinkData.forEach(cuenta => { %>
+        <tr>
+          <td><%= cuenta.email %></td>
+          <td><%= cuenta.plan %></td>
+          <td><%= cuenta.estado %></td>
+          <td><%= cuenta.renovacion %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</body>
+</html>

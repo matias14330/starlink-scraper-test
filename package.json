@@ -1,13 +1,18 @@
 {
   "name": "starlink-scraper",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "puppeteer": "^21.3.8",
-    "dotenv": "^16.3.1"
+    "axios": "^1.6.7",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "ejs": "^3.1.9",
+    "node-schedule": "^2.1.1",
+    "basic-auth": "^2.0.1"
   }
 }
